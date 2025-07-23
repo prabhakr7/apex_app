@@ -35,9 +35,9 @@
 
   -- set workspace 
      if (l_override_workspace != l_workspace and l_override_workspace != get_prop_default('workspace')) then
-      apex_application_install.set_workspace_name(l_override_workspace);
+      apex_application_install.set_workspace(l_override_workspace);
   else 
-      apex_application_install.set_workspace_name(l_workspace);         
+      apex_application_install.set_workspace(l_workspace);         
   end if; 
   commit;  
 
