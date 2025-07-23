@@ -1,6 +1,10 @@
 {
   "project" : "customers_app",
   "sqlcl" : {
+    "startup": [
+      "COMMIT",
+      "ALTER SESSION DISABLE PARALLEL DML"
+    ],
     "connectionName" : "",
     "version" : "25.2.1.0"
   },
